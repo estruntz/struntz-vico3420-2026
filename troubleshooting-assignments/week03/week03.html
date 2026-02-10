@@ -1,74 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title of the Webpage</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Title of the Webpage</title>
+  <style>
+    /* Body styling */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f9fa;
+    }
 
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 0.9rem;
-            line-height: 1.5;
-        }
+    /* Header */
+    header h1 {
+      text-align: center;
+      margin: 20px 0;
+    }
 
-        header h1 {
-            text-align: center;
-        }
+    /* Container for columns */
+    #container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
 
-        #container {
-            display: flex;
-            flex-wrap: wrap;
-        }
+    /* Individual columns */
+    .column {
+      background-color: rgb(202, 225, 251);
+      border-radius: 15px;
+      padding: 15px;
+      max-width: 400px;
+      flex: 1 1 300px;
+      box-sizing: border-box;
+    }
 
-        .column {
-            background-color: rgb(202, 225, 251);
-            margin: 0 auto; 
-            border-radius: 15px;
-            padding: 15px;
-            max-width: 400px;
-        }
+    /* h2 styling */
+    h2 {
+      margin-top: 0;
+    }
 
-        #footer {
-            margin: 30px auto;
-            text-align: center;
-        }
+    /* h3 styling */
+    h3 {
+      text-decoration: underline;
+      margin-bottom: 5px;
+    }
 
-        h3 {
-            text-decoration: underline;
-        }
-    </style>
+    /* Footer */
+    footer {
+      text-align: center;
+      margin: 30px auto;
+      padding: 10px;
+      background-color: #e0e0e0;
+      border-radius: 10px;
+    }
+  </style>
 </head>
-
 <body>
-    <header>
-        <h1>Lorem Ipsum</h1>
-    </header>
+  <header>
+    <h1>Lorem Ipsum</h1>
+  </header>
 
-    <div id="container">
-        <div class="column">
-            <h2>Lorem ipsum dolor</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus convallis nisl in feugiat efficitur.
-            </p>
-        </div>
+  <div id="container">
+    <div class="column">
+      <h2>Lorem ipsum dolor</h2>
+      <p>...</p>
+    </div>
 
-        <div class="column">
-            <h2>Etiam non dignissim metus</h2>
-            <p>
-                Etiam non dignissim metus. Pellentesque luctus purus in fringilla euismod.
-            </p>
-        </div>
+    <div class="column">
+      <h2>Etiam non dignissim metus</h2>
+      <p>...</p>
+    </div>
 
-        <div class="column">
-            <h2>Vivamus malesuada velit</h2>
-            <p>
-                Vivamus malesuada velit at erat venenatis lacinia.
-            </p>
+    <div class="column">
+      <h2>Vivamus malesuada velit</h2>
+      <h3>Nulla in justo nisi.</h3>
+      <p>...</p>
+      <h3>Maecenas feugiat ipsum</h3>
+      <p>...</p>
+    </div>
+  </div>
 
-            <h3>Nulla in justo nisi.</h3>
-            <p>
-                Donec vulputate arcu at metus tristique laoreet.
-            </p>
-
-            <h3>Maecenas feugiat
+  <footer>
+    <p>Copyright &copy; 2026 Jane Doe</p>
+  </footer>
+</body>
+</html>
