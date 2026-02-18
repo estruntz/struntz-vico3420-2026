@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorm Life Survival Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#packing">Packing</a></li>
+        <li><a href="#roommate">Roommate</a></li>
+        <li><a href="#budget">Budget</a></li>
+        <li><a href="#planner">Study Planner</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section id="home">
+    <h1>Dorm Life Survival Guide</h1>
+    <p class="subtitle">Helping you feel prepared, confident, and ready for college life.</p>
+</section>
+
+<section id="packing">
+    <h2>Packing Checklist</h2>
+    <div id="checklist">
+        <label><input type="checkbox"> Bedding</label>
+        <label><input type="checkbox"> Towels</label>
+        <label><input type="checkbox"> Laptop</label>
+        <label><input type="checkbox"> School Supplies</label>
+        <label><input type="checkbox"> Toiletries</label>
+    </div>
+
+    <div class="add-item">
+        <input type="text" id="new-item" placeholder="Add your own item">
+        <button id="add-item-btn">Add</button>
+    </div>
+
+    <p>Packed Items: <span id="packed-count">0</span></p>
+</section>
+
+<section id="roommate">
+    <h2>Roommate Guide</h2>
+    <p class="comfort-message">
+        Feeling nervous about living with someone new is completely normal. 
+        Most freshmen share the same worries. Communication and patience go a long way.
+    </p>
+
+    <h3 class="question">How do I set boundaries?</h3>
+    <p class="answer">Start with an honest conversation about sleep schedules, guests, noise, and shared items. Setting expectations early helps avoid confusion later.</p>
+
+    <h3 class="question">What if we have completely different personalities?</h3>
+    <p class="answer">You do not have to be best friends to be good roommates. Respect, communication, and compromise matter more than having identical interests.</p>
+
+    <h3 class="question">What if my roommate is messy?</h3>
+    <p class="answer">Talk about cleanliness early and create a simple cleaning plan. Clear communication prevents frustration from building up.</p>
+
+    <h3 class="question">How do we share space fairly?</h3>
+    <p class="answer">Divide closet space, drawers, and common areas evenly. Agree on which items are shared and which are personal.</p>
+
+    <h3 class="question">What if we argue?</h3>
+    <p class="answer">Stay calm and address the issue directly. If needed, most campuses offer resident assistants who can help mediate conversations.</p>
+
+    <h3 class="question">Is it normal to feel homesick at first?</h3>
+    <p class="answer">Yes. Almost everyone feels overwhelmed during the first few weeks. Give yourself time to adjust and reach out to friends, family, or campus support.</p>
+
+    <h3 class="question">How do I balance privacy and social life?</h3>
+    <p class="answer">Schedule quiet time for yourself and communicate when you need space. It is healthy to recharge while also making connections.</p>
+</section>
+
+<section id="budget">
+    <h2>Budget Calculator</h2>
+    <input type="number" id="food" placeholder="Food" min="0">
+    <input type="number" id="supplies" placeholder="Supplies" min="0">
+    <input type="number" id="entertainment" placeholder="Entertainment" min="0">
+    <button id="calculate">Calculate Total</button>
+    <p>Total: $<span id="total">0</span></p>
+</section>
+
+<section id="planner">
+    <h2>Study Planner</h2>
+    <input type="text" id="task-input" placeholder="Enter a task">
+    <button id="add-task">Add Task</button>
+    <ul id="task-list"></ul>
+</section>
+
+<section id="contact">
+    <h2>Contact / Submit a Tip</h2>
+    <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <textarea id="message" placeholder="Your Tip" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="form-message"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
